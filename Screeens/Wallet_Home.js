@@ -17,6 +17,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
+import { Services } from '../DumyData'
 
 
 const HomeWalt = ({ navigate }) => {
@@ -33,7 +34,10 @@ const HomeWalt = ({ navigate }) => {
                 <View style={Styles.Header}>
                     <View style={Styles.LeftHeader}>
                         <TouchableOpacity
-                            activeOpacity={0.8}
+                            activeOpacity={1}
+                            onPress={() => {
+                                navigate.openDrawer();
+                            }}
                         >
                             <Image
                                 source={require('../img/Logo.png')}
@@ -61,7 +65,7 @@ const HomeWalt = ({ navigate }) => {
                     color: "#3A4276",
                     marginLeft: 25,
                     fontWeight: "bold",
-                    marginBottom: 25
+                    marginBottom: 15
                 }}>Account Overview</Text>
                 <View style={Styles.CurrentBalance}>
                     <View style={Styles.Balance}>
@@ -89,12 +93,100 @@ const HomeWalt = ({ navigate }) => {
                     <Text style={{
                         fontSize: 16,
                         color: "#3A4276",
+                        fontWeight: "bold"
                     }}>Send Money</Text>
                     <Image
                         source={require('../img/Scan.png')}
                         style={Styles.Scan}
                         resizeMode='contain'
                     />
+                </View>
+                <View style={Styles.AddPerson}>
+                    <View style={Styles.plus}>
+                        <Image
+                            source={require('../img/plus.png')}
+                            style={Styles.plusIcon}
+                            resizeMode='contain'
+                        />
+                    </View>
+                    <View style={Styles.Reciver}>
+                        <Image
+                            source={require('../img/Mike.png')}
+                            style={Styles.imgperson}
+                            resizeMode='contain'
+                        />
+                        <Text style={{
+                            fontSize: 12,
+                            color: "#000",
+                            marginTop: 5
+                        }}>Mike</Text>
+                    </View>
+                    <View style={Styles.Reciver}>
+                        <Image
+                            source={require('../img/David.png')}
+                            style={Styles.imgperson}
+                            resizeMode='contain'
+                        />
+                        <Text style={{
+                            fontSize: 12,
+                            color: "#000",
+                            marginTop: 5
+                        }}>David</Text>
+                    </View>
+
+                    <View style={Styles.Reciver}>
+                        <Image
+                            source={require('../img/hacker.png')}
+                            style={Styles.imgperson}
+                            resizeMode='contain'
+                        />
+                        <Text style={{
+                            fontSize: 12,
+                            color: "#000",
+                            marginTop: 5
+
+                        }}>Ash</Text>
+                    </View>
+                </View>
+                {/* Design Seveices */}
+                <View style={Styles.services}>
+                    <Text style={{
+                        fontSize: 16,
+                        color: "#3A4276",
+                        fontWeight: "bold"
+                    }}>Services</Text>
+                    <Image
+                        source={require('../img/Transact.png')}
+                        style={Styles.Transaction}
+                    />
+                </View>
+
+                <View style={Styles.ServiceItems}>
+                    {
+                        Services.map((item) => {
+                            return (
+                                <View style={{ flexDirection: 'column', }}>
+                                    <View
+                                        key={item.id}
+                                        style={Styles.Items}>
+                                        <Image
+                                            source={item.image}
+                                            style={Styles.ImgItem}
+                                            resizeMode='contain'
+                                        />
+                                    </View>
+                                    <Text style={{
+                                        fontSize: 9,
+                                        color: "#7B7F9E",
+                                        width: "80%",
+                                        textAlign: "center"
+                                    }}>{item.Name}</Text>
+
+                                </View>
+                            )
+
+                        })
+                    }
                 </View>
             </View>
         </>
@@ -119,7 +211,7 @@ const Styles = StyleSheet.create({
         alignItems: "center",
         paddingHorizontal: 20,
         paddingVertical: 20,
-        marginVertical: 20,
+        marginVertical: 15,
     },
     LeftHeader: {
         flexDirection: 'row',
@@ -170,11 +262,76 @@ const Styles = StyleSheet.create({
         justifyContent: "space-between",
         // backgroundColor: "#00f",
         alignSelf: "center",
-        marginVertical: 25
+        marginVertical: 20
     },
     Scan: {
         width: 20,
         height: 20
+    },
+    AddPerson: {
+        width: 400,
+        height: 120,
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        paddingLeft: 20,
+        marginBottom: 20,
+
+    },
+    Reciver: {
+        width: 100,
+        height: 120,
+        backgroundColor: "#eee",
+        justifyContent: "center",
+        alignItems: "center",
+        borderRadius: 15,
+
+    },
+    imgperson: {
+        width: 80,
+        height: 45,
+
+    },
+    services: {
+        flexDirection: "row",
+        width: 325,
+        height: 25,
+        alignItems: "center",
+        paddingHorizontal: 10,
+        justifyContent: "space-between",
+        alignSelf: "center"
+    },
+    Transaction: {
+        width: 24,
+        height: 16
+    },
+    ServiceItems: {
+        width: "95%",
+        height: "50%",
+        // backgroundColor: "#ff0",
+        marginVertical: 15,
+        paddingHorizontal: 10,
+        flexDirection: "row",
+        flexWrap: "wrap",
+        justifyContent: "space-between",
+        alignItems: "center",
+        alignSelf: "center",
+        // paddingBottom: 15
+
+    },
+    Items: {
+        width: 60,
+        height: 50,
+        backgroundColor: "#E5E5E5",
+        justifyContent: "center",
+        marginVertical: 10,
+        alignItems: "center",
+        borderRadius: 15,
+
+    },
+    ImgItem: {
+        width: 23,
+        height: 24
     }
 
 
