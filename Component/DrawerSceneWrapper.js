@@ -22,21 +22,21 @@ const DrawerWrapper = ({ children }) => {
         transform: [
             { perspective: 500 },
             {
-                scale: interpolate(progress.value, [0, 1], [1, 0.65])
+                scale: interpolate(progress.value, [0, 1], [1, 0.55])
             },
-            // {
-            //     rotate:
-            //         `${interpolate(
-            //             progress.value,
-            //             [0, 1],
-            //             [0, -15],
-            //             'clamp',
-            //         )}deg`,
-            // },
+            {
+                rotate:
+                    `${interpolate(
+                        progress.value,
+                        [0, 1],
+                        [0, -15],
+                        'clamp',
+                    )}deg`,
+            },
         ],
         borderRadius: interpolate(progress.value, [0, 1], [0, 20]),
         overflow: 'hidden',
-        right: interpolate(progress.value, [0, 1], [0, 50])
+        // right: interpolate(progress.value, [0, 1], [0, 25])
     }))
     return (
         <Animated.View style={[styles.Parent, animatedstyle]}>

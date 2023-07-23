@@ -165,7 +165,7 @@ const HomeWalt = ({ navigate }) => {
                     {
                         Services.map((item) => {
                             return (
-                                <View style={{ flexDirection: 'column', }}>
+                                <View key={item.id} style={{ flexDirection: 'column', }}>
                                     <View
                                         key={item.id}
                                         style={Styles.Items}>

@@ -5,37 +5,37 @@ export const Services = [
         image: require('./img/Send.png'),
     },
     {
-        id: 1,
+        id: 2,
         Name: "Receive Money",
         image: require('./img/Recieve.png')
     },
     {
-        id: 1,
+        id: 3,
         Name: "Mobile prepaid",
         image: require('./img/Prepaid.png')
     },
     {
-        id: 1,
+        id: 4,
         Name: "Electricity Bill",
         image: require('./img/Bill.png')
     },
     {
-        id: 1,
+        id: 5,
         Name: "Cashback Offer",
         image: require('./img/Offer.png')
     },
     {
-        id: 1,
+        id: 6,
         Name: "Movie Tickets",
         image: require('./img/Tickets.png')
     },
     {
-        id: 1,
+        id: 7,
         Name: "Flight Tickets",
         image: require('./img/plane.png')
     },
     {
-        id: 1,
+        id: 8,
         Name: "More Options",
         image: require('./img/Option.png')
     },

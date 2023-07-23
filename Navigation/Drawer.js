@@ -25,6 +25,7 @@ import StatusWalt from '../Screeens/Wallet_Stauts'
 import SettingWalt from '../Screeens/Wallet_Profile'
 import HelperWalet from '../Screeens/Wallet_Help'
 import Logoutwalt from '../Screeens/Logout'
+import Entering from '../Screeens/Wallet_Entering'
 
 
 
@@ -38,8 +39,11 @@ const RootStack = ({ navigation }) => {
                 screenOptions={{
                     headerShown: false,
                 }}
-                initialRouteName='Home'
+                initialRouteName='Entering'
             >
+                <Stack.Screen name='Entering'>
+                    {(props) => <Entering {...props} navigation={props.navigation} />}
+                </Stack.Screen>
                 <Stack.Screen name='Home'>
                     {(props) => <HomeWalt {...props} navigate={navigation} />}
                 </Stack.Screen>
@@ -246,7 +250,7 @@ const styles = StyleSheet.create({
     Drawer_Style: {
         flex: 1,
         backgroundColor: 'transparent',
-        width: "63%",
+        width: "56%",
     },
     labl_style: {
         fontWeight: "bold",
