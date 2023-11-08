@@ -4,6 +4,9 @@ This is a new [**React Native**](https://reactnative.dev) project, using [`@reac
 
 >**Note**: This is Speed Code of Drawer Navigation With Animation for eWalet.
 
+## Screen Of Design.
+<img src="img/Drawer_Design.png" alt="Alt text" title="Optional title">
+
 ## Step 1: Start the Metro Server
 
 First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
