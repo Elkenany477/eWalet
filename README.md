@@ -8,7 +8,7 @@ This is a new [**React Native**](https://reactnative.dev) project, using [`@reac
 <div style="display:flex;margin-horizontal:15px;">
   <img src="img/Drawer_Design.png" alt="Paris" width="150" height="300" >
    <span style="margin-left:40px"></span>
-  <img src="img/Home_Design.png" alt="Paris" width="150" height="300" >
+  <img src="img/Home_Design.png" alt="Paris" width="150" height="300" left="15" >
 </div>
 
 
