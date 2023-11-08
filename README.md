@@ -18,7 +18,7 @@ img {
 </head>
 <body>
 
-<img src="img/Drawer_Design.png" alt="Paris" width="300" height="300">
+<img src="img/Drawer_Design.png" alt="Paris" width="150" height="300">
 
 </body>
 </html>
