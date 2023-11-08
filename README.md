@@ -7,7 +7,7 @@ This is a new [**React Native**](https://reactnative.dev) project, using [`@reac
 ## Screen Of Design.
 <div style="display:flex">
   <img src="img/Drawer_Design.png" alt="Paris" width="150" height="300" >
-  <img src="img/Home_Design.png" alt="Paris" width="150" height="300" style="margin:15px" >
+  <img src="img/Home_Design.png" alt="Paris" width="150" height="300" style="margin-left:5px;" >
 </div>
 
 
