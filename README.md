@@ -9,7 +9,7 @@ This is a new [**React Native**](https://reactnative.dev) project, using [`@reac
   src="img/Drawer_Design.png"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto; max-width: 300px;max-height:100px">
 
 ## Step 1: Start the Metro Server
 
