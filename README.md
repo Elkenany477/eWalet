@@ -17,8 +17,10 @@ img {
 </style>
 </head>
 <body>
+<div>
+  <img src="img/Drawer_Design.png" alt="Paris" width="150" height="300" >
+</div>
 
-<img src="img/Drawer_Design.png" alt="Paris" width="150" height="300">
 
 </body>
 </html>
