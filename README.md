@@ -18,9 +18,7 @@ img {
 </head>
 <body>
 
-<h2>Using object-fit: cover</h2>
-
-<img src="img/Drawer_Design.png" alt="Paris" width="400" height="300">
+<img src="img/Drawer_Design.png" alt="Paris" width="300" height="300">
 
 </body>
 </html>
