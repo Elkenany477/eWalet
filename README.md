@@ -5,7 +5,25 @@ This is a new [**React Native**](https://reactnative.dev) project, using [`@reac
 >**Note**: This is Speed Code of Drawer Navigation With Animation for eWalet.
 
 ## Screen Of Design.
-<img src="img/Drawer_Design.png" alt="Girl in a jacket" width="500" height="600" style="object-fit:"contain"" >
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+</style>
+</head>
+<body>
+
+<h2>Using object-fit: cover</h2>
+
+<img src="img/Drawer_Design.png" alt="Paris" width="400" height="300">
+
+</body>
+</html>
 
 ## Step 1: Start the Metro Server
 
