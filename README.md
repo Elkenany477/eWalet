@@ -5,7 +5,7 @@ This is a new [**React Native**](https://reactnative.dev) project, using [`@reac
 >**Note**: This is Speed Code of Drawer Navigation With Animation for eWalet.
 
 ## Screen Of Design.
-<div style="display:flex;padding-left:20">
+<div style="display:flex;padding-left:20px">
   <img src="img/Drawer_Design.png" alt="Paris" width="150" height="300" >
   <img src="img/Home_Design.png" alt="Paris" width="150" height="300" left="15" >
 </div>
